@@ -2,8 +2,9 @@
   <div class="row" id="intro">
 
     <h2>Moi!</h2>
-    <div class="large-12 columns">
-      <p>Olen informaatioverkosto-opiskelija Helsingistä. Kokkailen koodista erilaisia asioita ja etenkin käytettävien, mutta esteettisten nettisivujen kehittäminen on mieleeni. Alla niitä aineksia, joita hyödynnän ja ohessa portfolio projekteistani.
+    <div class="large-12 columns introduction">
+      <p>Olen informaatioverkosto-opiskelija Helsingistä. Kokkailen koodista erilaisia asioita ja etenkin käytettävien, mutta esteettisten nettisivujen kehittäminen on mieleeni.
+        Alla niitä aineksia, joita hyödynnän ja ohessa portfolio projekteistani. Löydät minut myös <a id="git" href="https://github.com/aleksitaipale/">GitHubista</a>.
       </p>
     </div>
 

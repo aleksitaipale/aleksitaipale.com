@@ -15,9 +15,10 @@
 				<li>PHP</li>
 				<li>Wordpress</li>
 			</ul>
-			<p>Tila on <a href="http://underscores.me/">Underscores</a>-pohjainen minimalistinen Wordpress-teema. Halusin toteuttaa teeman omalle blogille,
-				jossa ei olisi mitään turhaa - siispä sivusto on jokseenkin riisuttu. Etusivulla on otsikot ja postauksissa otsikko, teksti ja linkit seuraavaan/edeltävään postaukseen. Ei sosiaalisen median
-				jakonappuloita tai muitakaan kilkkeitä. Tässä oppi aika hyvin WordPressin toimintaperiaatteita ja sai jonkin verran kokemusta myös PHP:n käytöstä,
+			<p>Tila on <a href="http://underscores.me/">Underscores</a>-pohjainen Wordpress-sivu. Halusin toteuttaa teeman omalle blogille,
+				jossa ei olisi mitään turhaa - siispä sivusto on jokseenkin riisuttu, koska en kaivannut sosiaalisen median nappuloita,
+				kommentteja yms. Tässä oppi aika hyvin WordPressin toimintaperiaatteita
+				ja sai jonkin verran kokemusta myös PHP:n käytöstä,
 				mitä en ollut aikaisemmin käyttänyt.
 			</p>
 

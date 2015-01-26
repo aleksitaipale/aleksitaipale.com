@@ -7,7 +7,7 @@ html{
 
 }
 
-a{ color:   inherit;text-decoration:none; }
+a {color:inherit; text-decoration:none; }
 
 
 
@@ -121,6 +121,12 @@ $colors3: darken(#FFB9B9,20%),white;
 	}
 }
 
+#git {
+	font-weight:700;
+	&:hover{
+		opacity:0.7;
+	}
+}
 #scala{@include leftcolored(#ff2600);}
 #python{@include leftcolored(#214767);}
 #css{@include leftcolored(#016FBA);}
@@ -139,7 +145,8 @@ $colors3: darken(#FFB9B9,20%),white;
 section{
 	margin:  -1px;
 	width:   100%;
-	padding: 3% 0 3% 0;
+	padding: 3% 0 1% 0;
+	max-height:100%;
 
 }
 
@@ -166,6 +173,13 @@ section{
 	margin:0 auto 0 auto;
 }
 
+body{
+	width:       100%;
+	height:      100%;
+	font:        100% $mainFont;
+	font-weight: 400;
+	background-color:nth($colors1,2);
+}
 
 header {
 	display:        block;
@@ -177,12 +191,7 @@ header {
 		max-height: 100%;}
 	}
 
-	body{
-		width:       100%;
-		height:      100%;
-		font:        100% $mainFont;
-		font-weight: 400;
-	}
+
 
 	h1:hover{opacity:0.9}
 
@@ -230,6 +239,8 @@ header {
 	}
 }
 
+/* The list of projects, on the front page */
+
 .projectsList{
 	text-align:center;
 	div ul li{
@@ -243,12 +254,13 @@ header {
 
 }
 
+/* The list of tools, on the front page */
 .toolsList{
 	font-weight:400;
-	margin-bottom:8%;
 	li{ font: 100% $mainFont;}
 }
 
+/* The list of technologies used, on individual project pages */
 
 .techList{
 	margin-bottom:5%;

@@ -1,4 +1,4 @@
-  <section class="color3">
+  <section class="color2">
     <div class="row">
       <div class="large-12 columns">
       </div>
@@ -25,7 +25,7 @@
         </li>
         <li><a href="tila.php"><img src="img/resized/tilabanner-small.png" data-1x="img/resized/tilabanner-large.png" data-2x="img/resized/tilabanner-retina.png">
           <h4>Tila</h4>
-          <p>Turhat pois -teema WordPressiin</p>
+          <p>Underscores-pohjainen Wordpress-blogi</p>
         </a>
       </li>
       <li>
