@@ -93,7 +93,7 @@ h4{
 /*---------------------------COLORS---------------------------*/
 
 /* A colour palette for easier changeability */
-$colors1: #EF4B25,lighten(#CBE86B,30%);
+$colors1: lighten(#EF4B25,5%),lighten(#CBE86B,30%);
 $colors2: lighten(#CBE86B,30%),#EF4B25;
 $colors3: darken(#FFB9B9,20%),white;
 
