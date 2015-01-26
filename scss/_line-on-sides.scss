@@ -1,0 +1,30 @@
+// https://gist.github.com/frxnz/11048591
+// This puts a 1px line on either side of a heading
+// ------- Like This -------
+
+
+
+.lines-on-sides {
+    $currentColor: #DBDEE6;
+    display: table;
+    text-align: center;
+    white-space: nowrap;
+
+    &:after,
+    &:before {
+        content: '';
+        display: table-cell;
+        width: 50%;
+        background: linear-gradient(transparent 50%, $currentColor 50%, $currentColor calc(50% + 1px), transparent calc(50% + 1px));
+        background-clip: padding;
+
+    }
+
+    &:after {
+        border-left: 1px solid transparent;
+    }
+
+    &:before {
+        border-right: 1px solid transparent;
+    }
+}

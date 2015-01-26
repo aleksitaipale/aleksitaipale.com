@@ -1,0 +1,284 @@
+html{
+	width: 100%;
+	&:not(.old-ie){
+		@import "line-on-sides";
+	}
+	font-size:90%;
+
+}
+
+a{ color:   inherit;text-decoration:none; }
+
+
+
+/*---------------------------IMPORTS---------------------------*/
+@import "media-queries";
+@import "foundation_breakpoints";
+
+/*---------------------------FONTS---------------------------*/
+
+@font-face {
+	font-family: Lovelo;
+	src:         url(../fonts/loveloblack.otf);
+}
+
+
+
+$mainFont: 'Open Sans', sans-serif;
+$header:   'Oswald', sans-serif;
+
+/*---------------------------TYPOGRAPHY---------------------------*/
+
+b{font-weight:700;}
+
+h1{
+	font-family: "Knewave",sans-serif;
+	white-space: nowrap;
+	width:       100%;
+}
+
+h2,h3{
+	@extend .lines-on-sides;
+	font:        100% $mainFont;
+	font-weight: 400;
+	margin:      4% 0 4% 0;
+	font-family: 'Knewave', sans-serif;
+}
+
+h2{
+	text-align:    center;
+	padding:       2%;
+	margin-bottom: 4%;
+	font-size:     2em;
+	font-weight:   400;
+}
+
+h3{
+	font-weight: 300;
+	text-align:  center;
+	@extend .lines-on-sides;
+}
+
+h4{
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	margin-top:4%;
+}
+
+#cv {
+	span{
+		font-weight:700;
+	}
+
+	*:not(h1){
+		font-family:'Open Sans',sans-serif;
+	}
+
+}
+
+
+/*---------------------------MIXINS---------------------------*/
+
+/* This gives the tools list the coloured bars on the left side */
+
+@mixin leftcolored($color){
+
+	//color:     $color;
+	border-left: 3px solid $color;
+	margin:      0 0 2% 0;
+	padding:     0 0 1% 4%;
+/*
+	&:before {
+		content: "• ";
+		color: $color;
+	}
+	*/
+	
+}
+
+/*---------------------------COLORS---------------------------*/
+
+/* A colour palette for easier changeability */
+$colors1: #EF4B25,lighten(#CBE86B,30%);
+$colors2: lighten(#CBE86B,30%),#EF4B25;
+$colors3: darken(#FFB9B9,20%),white;
+
+.color1{
+	background-color: nth($colors1, 1);
+	color:            nth($colors1, 2);
+
+	nav div div:hover{
+		background-color: nth($colors1, 2);
+		color:            nth($colors1,1);
+	}
+}
+.color2{
+	background-color: nth($colors2, 1);
+	color:            nth($colors2, 2);
+}
+.color3{
+	background-color: nth($colors3, 1);
+	color:            nth($colors3, 2);
+	img{
+		display:          block;
+		margin:           0 auto 0 auto;
+		padding:          3%;
+		background-color: nth($colors2, 1);
+	}
+}
+
+#scala{@include leftcolored(#ff2600);}
+#python{@include leftcolored(#214767);}
+#css{@include leftcolored(#016FBA);}
+#html{@include leftcolored(#E44D26);}
+#javascript{@include leftcolored(#E5A228);}
+#django{@include leftcolored(#0C4B33);}
+#photoshop{@include leftcolored(#333149);}
+#gimp{@include leftcolored(#5E5846);}
+#indesign{@include leftcolored(#FE3B90);}
+#wordpress{@include leftcolored(#21759A);}
+
+/*---------------------------SIZE & POSITIONING---------------------------*/
+
+/* The site is divided into "sections" which then are coloured using the colour palette */
+
+section{
+	margin:  -1px;
+	width:   100%;
+	padding: 3% 0 3% 0;
+
+}
+
+#mina{
+	section{
+		height:100%;
+	}
+}
+
+#intro{
+	margin:0 auto 4% auto;
+}
+
+.image-gallery{
+	margin-top: 15%;
+	@extend .color1;
+	padding: 3%;
+}
+
+#profilePhoto{
+	border-radius:100%;
+	max-width:80%;
+	display:block;
+	margin:0 auto 0 auto;
+}
+
+
+header {
+	display:        block;
+	padding-bottom: 2%;
+
+	img{
+		margin-top: 2%;
+		max-width:  100%;
+		max-height: 100%;}
+	}
+
+	body{
+		width:       100%;
+		height:      100%;
+		font:        100% $mainFont;
+		font-weight: 400;
+	}
+
+	h1:hover{opacity:0.9}
+
+	nav{
+		text-align: center;
+		height:     4em;
+		width:      100%;
+		display:    table;
+
+		/*The navigation ul*/
+
+		div{
+		//background-color: pink;
+		display:            table-cell;
+		vertical-align:     middle;
+		height:             100%;
+		/*The navigation li items*/
+
+		div{
+			padding: 5%;
+			width:   33.3333333%;
+			display: inline-block;
+
+/*
+			&:hover{
+				background-color:white;
+
+			}
+			*/
+
+			&:active{
+				opacity:0.8;
+			}
+		}
+
+
+	}
+
+
+}
+
+.infoPage{
+	a{color: blue;
+		&:hover{opacity:0.8;}
+	}
+}
+
+.projectsList{
+	text-align:center;
+	div ul li{
+		&:hover{opacity:0.7;}
+	}
+
+	p{
+		font-style:italic;
+		font-size:0.8em;
+	}
+
+}
+
+.toolsList{
+	font-weight:400;
+	margin-bottom:8%;
+	li{ font: 100% $mainFont;}
+}
+
+
+.techList{
+	margin-bottom:5%;
+	text-align:center;
+	li{
+		display:inline-block;
+		padding:2%;
+		@extend .color1;
+	}
+}
+
+
+
+
+
+/*---------------------------MEDIA QUERIES---------------------------*/
+
+@media #{$small-only} {
+	h1{
+		text-align:center;	
+	}
+	
+}
+
+@media #{$large-up} {nav{margin-top:2%;}}
+
+
