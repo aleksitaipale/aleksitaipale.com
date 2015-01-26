@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="large-6 columns small-12 columns">
 			<div class="image-gallery hisrc">
-				<img src="img/resized/lyraedesk-small.png" data-1x="img/resized/lyraedesk-large.png" data-2x="img/resized/lyraedesk-retina.png">
+				<a href="projects/Lyrae/index.html"><img src="img/resized/lyraedesk-small.png" data-1x="img/resized/lyraedesk-large.png" data-2x="img/resized/lyraedesk-retina.png"></a>
 			</div>
 		</div>
 		<div class="large-6 columns small-12 columns">

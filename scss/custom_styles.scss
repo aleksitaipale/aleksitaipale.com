@@ -127,6 +127,16 @@ $colors3: darken(#FFB9B9,20%),white;
 		opacity:0.7;
 	}
 }
+#mail {
+	display:block;
+	text-align:center;
+	width:30%; 
+	padding:2%;
+	margin:0 auto 0 auto;
+	background-color:nth($colors1,2);
+	color:nth($colors1,1);
+	&:hover{opacity:0.8;}
+}
 #scala{@include leftcolored(#ff2600);}
 #python{@include leftcolored(#214767);}
 #css{@include leftcolored(#016FBA);}
@@ -247,6 +257,8 @@ header {
 	div ul li{
 		&:hover{opacity:0.7;}
 	}
+
+	margin-bottom:20%;
 
 	p{
 		font-style:italic;

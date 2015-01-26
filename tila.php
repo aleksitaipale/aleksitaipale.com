@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="large-6 columns small-12 columns">
 			<div class="image-gallery hisrc">
-				<img src="img/resized/tiladesk2-small.png" data-1x="img/resized/tiladesk2-large.png" data-2x="img/resized/tiladesk2-retina.png">
+				<a href="projects/tila"><img src="img/resized/tiladesk2-small.png" data-1x="img/resized/tiladesk2-large.png" data-2x="img/resized/tiladesk2-retina.png"></a>
 			</div>
 		</div>
 		<div class="large-6 columns small-12 columns">

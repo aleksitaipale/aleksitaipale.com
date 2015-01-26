@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="large-6 columns small-12 columns">
 			<div class="image-gallery hisrc">
-				<img src="img/resized/goelgdesktop-small.png" data-1x="img/resized/goelgdesktop-large.png" data-2x="img/resized/goelgdesktop-retina.png">
+				<a href="projects/goelg/index.html"><img src="img/resized/goelgdesktop-small.png" data-1x="img/resized/goelgdesktop-large.png" data-2x="img/resized/goelgdesktop-retina.png"></a>
 			</div>
 		</div>
 		<div class="large-6 columns small-12 columns">
