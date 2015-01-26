@@ -132,7 +132,7 @@ $colors3: darken(#FFB9B9,20%),white;
 	text-align:center;
 	width:30%; 
 	padding:2%;
-	margin:0 auto 0 auto;
+	margin:4% auto 0 auto;
 	background-color:nth($colors1,2);
 	color:nth($colors1,1);
 	&:hover{opacity:0.8;}
@@ -296,6 +296,7 @@ header {
 		text-align:center;	
 	}
 	
+	#mail{width:80%;margin:9% auto 5% auto;}
 }
 
 @media #{$large-up} {nav{margin-top:2%;}}

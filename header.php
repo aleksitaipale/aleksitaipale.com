@@ -7,7 +7,7 @@
       <div class="large-5 columns small-12 columns" data-equalizer-watch>
         <nav>
           <div class="row">
-            <a href="index.php"><div class="large-6 columns small-6 columns">Portfolio</div></a>
+            <a href="index.php"><div class="large-6 columns small-6 columns">Etusivu</div></a>
             <a href="mina.php"><div class="large-6 columns small-6 columns">Minä</div></a>
           </div>
         </nav>
