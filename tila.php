@@ -21,7 +21,6 @@
 				ja sai jonkin verran kokemusta myös PHP:n käytöstä,
 				mitä en ollut aikaisemmin käyttänyt.
 			</p>
-
 		</div>
 	</div>
 </section>

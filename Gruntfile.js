@@ -71,7 +71,7 @@ module.exports = function(grunt) {
       },
     },
 
-
+/*
     autoprefixer: {
       dist: {
         files: {
@@ -79,6 +79,7 @@ module.exports = function(grunt) {
         }
       }
     },
+    */
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
@@ -87,10 +88,7 @@ module.exports = function(grunt) {
         files: 'scss/*.scss',
         tasks: ['sass']
       },
-      styles: {
-        files: ['css/custom_styles.css'],
-        tasks: ['autoprefixer']
-      },
+
       
     }
   });
@@ -102,7 +100,7 @@ grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-responsive-images');
 grunt.loadNpmTasks('grunt-contrib-watch');
-
+//,'autoprefixer'
 grunt.registerTask('build', ['sass']);
-grunt.registerTask('default', ['build','responsive_images','imagemin','scsslint','jshint','autoprefixer','watch']);
+grunt.registerTask('default', ['build','responsive_images','imagemin','scsslint','jshint','watch']);
 };

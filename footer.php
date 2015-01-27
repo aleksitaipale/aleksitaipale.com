@@ -4,7 +4,7 @@
   <script src="js/foundation.min.js"></script>
   <script src="js/foundation/foundation.equalizer.js"></script>
   <script src="js/jquery.fittext.js"></script>
-
+  <div id="footer"></div>
 
   <script>
   $(document).foundation();
