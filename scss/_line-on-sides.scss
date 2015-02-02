@@ -5,18 +5,19 @@
 
 
 .lines-on-sides {
-    $currentColor: #DBDEE6;
+    $currentColor: #dbdee6;
     display: table;
     text-align: center;
     white-space: nowrap;
 
     &:after,
     &:before {
+        background: linear-gradient(transparent 50%, $currentColor 50%, $currentColor calc(50% + 1px), transparent calc(50% + 1px));
+        background-clip: padding;
         content: '';
         display: table-cell;
         width: 50%;
-        background: linear-gradient(transparent 50%, $currentColor 50%, $currentColor calc(50% + 1px), transparent calc(50% + 1px));
-        background-clip: padding;
+
 
     }
 

@@ -20,9 +20,9 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'images/',
-          src: ['img/*.{png,jpg,gif}'],
-          dest: 'images/build/'
+          cwd: 'img/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'build/'
         }]
       }
     },
@@ -64,11 +64,24 @@ module.exports = function(grunt) {
       'scss/*.scss',
       ],
       options: {
-        bundleExec: true,
-        config: '.scss-lint.yml',
+        bundleExec:false,
+        config: null,
         reporterOutput: 'scss-lint-report.xml',
         colorizeOutput: true
       },
+    },
+
+    cacheBust: {
+      options: {
+        encoding: 'utf8',
+        algorithm: 'md5',
+        length: 16
+      },
+      assets: {
+        files: [{
+          src: ['index.html']
+        }]
+      }
     },
 
 /*
@@ -100,7 +113,8 @@ grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-responsive-images');
 grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-cache-bust');
 //,'autoprefixer'
 grunt.registerTask('build', ['sass']);
-grunt.registerTask('default', ['build','responsive_images','imagemin','scsslint','jshint','watch']);
+grunt.registerTask('default', ['build','responsive_images','imagemin', 'cacheBust','jshint','watch']);
 };

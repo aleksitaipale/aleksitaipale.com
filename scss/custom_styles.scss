@@ -1,9 +1,10 @@
 html{
+	font-size:90%;
 	width: 100%;
 	&:not(.old-ie){
 		@import "line-on-sides";
 	}
-	font-size:90%;
+
 
 }
 
@@ -11,17 +12,17 @@ a {color:inherit; text-decoration:none; }
 
 
 
-/*---------------------------IMPORTS---------------------------*/
-@import "media-queries";
-@import "foundation_breakpoints";
+//---------------------------IMPORTS---------------------------
+@import "media-queries"; 
+@import "foundation_breakpoints"; 
 
-/*---------------------------FONTS---------------------------*/
+//---------------------------FONTS---------------------------
 
 
-$mainFont: 'Open Sans', sans-serif;
-$header:   'Oswald', sans-serif;
+$mainfont: 'Open Sans', sans-serif; 
+$header:   'Oswald', sans-serif; 
 
-/*---------------------------TYPOGRAPHY---------------------------*/
+//---------------------------TYPOGRAPHY---------------------------
 
 b{font-weight:700;}
 
@@ -33,7 +34,7 @@ h1{
 
 h2,h3{
 	@extend .lines-on-sides;
-	font:        100% $mainFont;
+	font:        100% $mainfont;
 	font-weight: 400;
 	margin:      4% 0 4% 0;
 	font-family: 'Knewave', sans-serif;
@@ -71,15 +72,15 @@ h4{
 }
 
 
-/*---------------------------MIXINS---------------------------*/
+//---------------------------MIXINS---------------------------
 
-/* This gives the tools list the coloured bars on the left side */
+//This gives the tools list the coloured bars on the left side
 
 @mixin leftcolored($color){
 
 	//color:     $color;
 	border-left: 3px solid $color;
-	margin:      0 0 2% 0;
+	margin:      0 0 2%;
 	padding:     0 0 1% 4%;
 /*
 	&:before {
@@ -90,12 +91,12 @@ h4{
 	
 }
 
-/*---------------------------COLORS---------------------------*/
+//---------------------------COLORS---------------------------
 
-/* A colour palette for easier changeability */
-$colors1: lighten(#EF4B25,5%),lighten(#CBE86B,30%);
-$colors2: lighten(#CBE86B,30%),#EF4B25;
-$colors3: darken(#FFB9B9,20%),white;
+// A colour palette for easier changeability
+$colors1: lighten(#ef4b25,5%),lighten(#cbe86b,30%);
+$colors2: lighten(#cbe86b,30%),#ef4b25;
+$colors3: darken(#ffb9b9,20%),#ffffff;
 
 .color1{
 	background-color: nth($colors1, 1);
@@ -106,6 +107,7 @@ $colors3: darken(#FFB9B9,20%),white;
 		color:            nth($colors1,1);
 	}
 }
+
 .color2{
 	background-color: nth($colors2, 1);
 	color:            nth($colors2, 2);
@@ -115,7 +117,7 @@ $colors3: darken(#FFB9B9,20%),white;
 	color:            nth($colors3, 2);
 	img{
 		display:          block;
-		margin:           0 auto 0 auto;
+		margin:           0 auto;
 		padding:          3%;
 		background-color: nth($colors2, 1);
 	}
@@ -128,34 +130,36 @@ $colors3: darken(#FFB9B9,20%),white;
 	}
 }
 #mail {
-	display:block;
-	text-align:center;
-	width:30%; 
-	padding:2%;
-	margin:4% auto 0 auto;
 	background-color:nth($colors1,2);
 	color:nth($colors1,1);
+	display:block;
+	margin:4% auto 0;
+	padding:2%;
+	text-align:center;
+	width:30%; 
+
 	&:hover{opacity:0.8;}
 }
 #scala{@include leftcolored(#ff2600);}
 #python{@include leftcolored(#214767);}
-#css{@include leftcolored(#016FBA);}
-#html{@include leftcolored(#E44D26);}
-#javascript{@include leftcolored(#E5A228);}
-#django{@include leftcolored(#0C4B33);}
+#css{@include leftcolored(#016fba);}
+#html{@include leftcolored(#e44d26);}
+#javascript{@include leftcolored(#e5a228);}
+#django{@include leftcolored(#0c4b33);}
 #photoshop{@include leftcolored(#333149);}
-#gimp{@include leftcolored(#5E5846);}
-#indesign{@include leftcolored(#FE3B90);}
-#wordpress{@include leftcolored(#21759A);}
+#gimp{@include leftcolored(#5e5846);}
+#indesign{@include leftcolored(#fe3B90);}
+#wordpress{@include leftcolored(#21759a);}
 
-/*---------------------------SIZE & POSITIONING---------------------------*/
+//---------------------------SIZE & POSITIONING---------------------------
 
-/* The site is divided into "sections" which then are coloured using the colour palette */
+// The site is divided into "sections" which then are coloured using the colour palette
 
 section{
+	padding: 3% 0 1%;
 	margin:  -1px;
 	width:   100%;
-	padding: 3% 0 1% 0;
+
 	//max-height:100%;
 
 
@@ -168,7 +172,7 @@ section{
 }
 
 #intro{
-	margin:0 auto 4% auto;
+	margin:0 auto 4%;
 }
 
 .image-gallery{
@@ -179,17 +183,17 @@ section{
 
 #profilePhoto{
 	border-radius:100%;
-	max-width:80%;
 	display:block;
-	margin:0 auto 0 auto;
+	margin:0 auto;
+	max-width:200px;
 }
 
 body{
+	background-color:nth($colors1,2);
+	font:        100% $mainfont;
+	font-weight: 400;
 	width:       100%;
 	//height:      100%;
-	font:        100% $mainFont;
-	font-weight: 400;
-	background-color:nth($colors1,2);
 }
 
 header {
@@ -212,14 +216,14 @@ header {
 		width:      100%;
 		display:    table;
 
-		/*The navigation ul*/
+		// The navigation ul
 
 		div{
 		//background-color: pink;
 		display:            table-cell;
 		vertical-align:     middle;
 		height:             100%;
-		/*The navigation li items*/
+		// The navigation li items
 
 		div{
 			padding: 5%;
@@ -253,7 +257,7 @@ header {
 	}
 }
 
-/* The list of projects, on the front page */
+// The list of projects, on the front page
 
 .projectsList{
 	text-align:center;
@@ -268,13 +272,13 @@ header {
 
 }
 
-/* The list of tools, on the front page */
+// The list of tools, on the front page
 .toolsList{
 	font-weight:400;
-	li{ font: 100% $mainFont;}
+	li{ font: 100% $mainfont;}
 }
 
-/* The list of technologies used, on individual project pages */
+// The list of technologies used, on individual project pages
 
 .techList{
 	margin-bottom:5%;
@@ -291,7 +295,7 @@ header {
 	height:100px;
 }
 
-/*---------------------------MEDIA QUERIES---------------------------*/
+//---------------------------MEDIA QUERIES---------------------------
 
 @media #{$small-only} {
 	section:last-child{padding-bottom:50%;}
