@@ -2,10 +2,10 @@
 <?php include("header.php");?>
 <section class="color2">
 	<div class="row hisrc">
-		<div class="large-3 columns small-12 columns bordered">
+		<div class="large-1 columns small-12 columns">
 			<img id="profilePhoto" src="img/resized/mina-small.jpg" data-1x="img/resized/mina-large.jpg" data-2x="img/resized/mina-retina.jpg">
 		</div>
-		<div class="large-9 columns small-12 columns">
+		<div class="large-10 offset-1 small-12 columns">
 			<h2>Kuka?</h2>
 			<p>	Opiskelen toista vuotta informaatioverkostoja Aalto-yliopistossa. En ennen opiskeluja ollut varsinaisesti koodannut,
 				mutta tekniikka on aina tuntunut omalta. Olen vapaa-ajan projekteissani keskittynyt enemmän front-endiin, mutten

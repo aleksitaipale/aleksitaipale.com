@@ -1,0 +1,25 @@
+html,body{
+	margin:0;
+}
+.optionsList{
+	margin-top:5%;
+}
+
+h1{
+	padding-left:2%;
+	border-left:3px solid black;
+}
+
+h1 span{
+	background-color:black;
+	color:white;
+	padding:2%;
+	white-space:nowrap;
+}
+
+
+.optionsList ul li{
+	background-color:red;
+	text-align:center;
+	padding:5%;
+}
