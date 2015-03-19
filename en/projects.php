@@ -10,13 +10,20 @@
       <div class="large-12 columns">
         <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 projectList">
           <li>
-            <a href="lykoffice365.php">
-              <img src="../img/resized/lyko365logo-small.png" data-1x="../img/resized/lyko365logo-large.png" data-2x="../img/resized/lyko365logo-retina.png"/>
-             <h4>Lauttasaaren yhteiskoulu - Office 365</h4>
-             <p>IT guide for high school freshmen</p>
+            <a href="gamestore.php">
+              <img src="../img/resized/gamestorebanner-small.png" data-1x="../img/resized/gamestorebanner-large.png" data-2x="../img/resized/gamestorebanner-retina.png"/>
+             <h4>Gamestore</h4>
+             <p>A Django-based JavaScript game marketplace</p>
            </a>
          </li>
          <li>
+          <a href="lykoffice365.php">
+            <img src="../img/resized/lyko365logo-small.png" data-1x="../img/resized/lyko365logo-large.png" data-2x="../img/resized/lyko365logo-retina.png"/>
+            <h4>Lauttasaaren yhteiskoulu - Office 365</h4>
+            <p>IT guide for high school freshmen</p>
+          </a>
+        </li>
+        <li>
           <a href="aleksitaipalecom.php">
            <img src="../img/resized/aleksitaipalebanner-small.png" data-1x="../img/resized/aleksitaipalebanner-large.png" data-2x="../img/resized/aleksitaipalebanner-retina.png"/>
            <h4>aleksitaipale.com</h4>
