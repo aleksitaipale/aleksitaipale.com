@@ -1,5 +1,8 @@
-<?php include('head.php');?>
-<?php include("header.php");?>
+<?php
+$fin_url="mina.php";
+$eng_url="aboutme.php";
+include('head.php');
+include("header.php");?>
 <section class="color2">
 	<div class="row hisrc">
 		<div class="large-3 columns small-12 columns bordered">

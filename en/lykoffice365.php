@@ -1,5 +1,8 @@
-<?php include('head.php');?>
-<?php include("header.php");?>
+<?php
+$fin_url="lykoffice365.php";
+$eng_url="lykoffice365.php";
+include('head.php');
+include("header.php");?>
 <section class="color2 infoPage">
 	<div class="row">
 		<div class="large-6 columns small-12 columns">
