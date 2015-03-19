@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta name="description" content="Code & websites, with quality and aesthetics.">
-
+  <link rel="shortcut icon" href="/aleksikoni.ico" type="image/x-icon" />
   <!-- Meta tags for Facebook -->
   <meta property="og:image" content="../img/thumbnail.png"/>
   <meta property="og:url" content="http://www.aleksitaipale.com"/>

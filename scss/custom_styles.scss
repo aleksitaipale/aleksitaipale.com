@@ -124,7 +124,7 @@ $colors3: darken(#ffb9b9,20%),#ffffff;
 	}
 }
 
-#git {
+.introduction a {
 	font-weight:700;
 	&:hover{
 		opacity:0.7;
@@ -248,6 +248,13 @@ header {
 	}
 
 
+}
+
+.language{
+	@extend .color2;
+	&:hover{
+		opacity:0.5;
+	}
 }
 
 

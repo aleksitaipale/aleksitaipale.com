@@ -1,5 +1,9 @@
-<?php include('head.php');?>
-<?php include("header.php");?>
+<?php
+$fin_url="goelg.php";
+$eng_url="goelg.php";
+
+include('head.php');
+include("header.php");?>
 <section class="color2 infoPage">
 	<div class="row">
 		<div class="large-6 columns small-12 columns">

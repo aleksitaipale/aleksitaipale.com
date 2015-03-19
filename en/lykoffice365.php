@@ -18,7 +18,7 @@
 			<p> This IT guide was created for Lauttasaaren yhteiskoulu, to aid high school freshmen utilize computers better in their school work.
 				It's made on top of the Office365 platform and consists of information about, e.g., basic image manipulation with GIMP (with screenshots),
 				file formats and the upcoming digital matriculation examinations.<br><br>
-				Office365-järjestelmä would've, in theory, allowed for HTML/CSS editing, but because the project needs to be updatable by for example teachers,
+				Office365 would've, in theory, allowed for HTML/CSS editing, but because the project needs to be updatable by for example teachers,
 				this would've been a bad decision. That's why the only HTML tweaks I did are anchor links for the table of contents, otherwise the projects has
 				been made using Office365's basic features.<br><br>
 				The technical side of the project wasn't difficult, but the real challenge was how to present the information in an easily digestable form for people

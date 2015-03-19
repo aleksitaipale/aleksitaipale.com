@@ -7,10 +7,13 @@
       <div class="large-5 columns small-12 columns" data-equalizer-watch>
         <nav>
           <div class="row">
-            <a href="index.php"><div class="large-6 columns small-6 columns">Home</div></a>
-            <a href="aboutme.php"><div class="large-6 columns small-6 columns">About me</div></a>
+            <a href="index.php"><div class="large-4 columns small-6 columns">Home</div></a>
+            <a href="aboutme.php"><div class="large-4 columns small-6 columns">About me</div></a>
+            <a href="../index.php"><div class="large-2 columns small-6 columns language">FI</div></a>
+            <a href="index.php"><div class="large-2 columns small-6 columns language">EN</div></a>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>

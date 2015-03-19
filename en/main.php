@@ -4,7 +4,7 @@
     <h2>Hi!</h2>
     <div class="large-12 columns introduction">
       <p>I'm an information networks student from Helsinki, Finland. I cook different things using code and especially creating usable but aesthetic websites is a passion of mine.
-        Down below you can find some of the ingredients I use and a portfolio of my projects. You can also find me on <a id="git" href="https://github.com/aleksitaipale/">GitHub</a>.
+        Down below you can find some of the ingredients I use and a portfolio of my projects. You can also find me on <a href="https://github.com/aleksitaipale/">GitHub</a> and <a href="http://fi.linkedin.com/in/taipalealeksi">LinkedIn</a>.
       </p>
       <div id="mail">
         <script type="text/javascript">
